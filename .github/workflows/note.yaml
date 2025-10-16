@@ -73,7 +73,7 @@ jobs:
       - name: Research with Claude Code SDK
         run: |
           cat > research.mjs <<'EOF'
-          import { query } from '@anthropic-ai/claude-code';
+          import { query } from '@anthropic-ai/claude-agent-sdk';
           import fs from 'fs';
           const theme = process.env.THEME || '';
           const target = process.env.TARGET || '';
